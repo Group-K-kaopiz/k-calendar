@@ -1,0 +1,34 @@
+name: Sync Personal Repo for Vercel Free Plan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Configure Git
+      - name: Configure Git
+        env:
+          TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        run: |
+          git config user.name "tuanlongn"
+          git config user.email "tuanlongn@gmail.com"
+          git remote add personal https://x-access-token:$TOKEN@github.com/tuanlongn/k-calendar.git
+          git remote -v
+          git config credential.username tuanlongn
+          git push -f personal main
+
+      - name: Debug Token
+        env:
+          TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        run: echo "Token $TOKEN"
+
+      - name: Check Remote
+        run: git remote -v
