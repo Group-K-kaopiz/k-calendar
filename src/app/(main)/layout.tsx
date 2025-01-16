@@ -1,5 +1,5 @@
-import PrimaryAppBar from "../components/appbar";
-import SideNav from "../components/sidenav";
+import PrimaryAppBar from "../components/PrimaryAppBar";
+import SideNav from "../components/SideNav";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

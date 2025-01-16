@@ -1,7 +1,7 @@
 'use client'
 
 import { configureStore } from '@reduxjs/toolkit';
-import ToggleSlice from './features/toggle/toggleSlice';
+import ToggleSlice from './toggleSlice';
 
 export const store = configureStore({
     reducer: {

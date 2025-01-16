@@ -1,11 +1,11 @@
 'use client'
 
-import { calculateDate } from "../composables/calculateDate";
+import { useCalculateDate } from "../hooks/useCalculateDate";
 import { Timeline } from "../lib/definitions";
 
 export default function CalendarDays({ timelines, dayDate }: { timelines: Timeline[], dayDate: Date }) {
 
-  const currentDays = calculateDate(dayDate, timelines);
+  const currentDays = useCalculateDate(dayDate, timelines);
 
   return (
     <div className="table-content h-full grid grid-cols-7">

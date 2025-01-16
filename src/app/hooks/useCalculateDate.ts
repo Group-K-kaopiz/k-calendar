@@ -1,6 +1,6 @@
 import { Timeline } from "../lib/definitions";
 
-export const calculateDate = (dayDate: Date, timelines: Timeline[]) => {
+export const useCalculateDate = (dayDate: Date, timelines: Timeline[]) => {
 
   let idx = 0;
 

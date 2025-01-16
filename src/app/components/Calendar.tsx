@@ -2,9 +2,9 @@
 
 import React from "react";
 import { useState } from "react";
-import CalendarDays from "@/app/components/calendarDays";
-import Statistics from "@/app/components/statistics";
-import MonthPickerPopover from "@/app/components/monthpickerComponent";
+import CalendarDays from "@/app/components/CalendarDays";
+import Statistics from "@/app/components/Statistics";
+import MonthPickerPopover from "@/app/components/MonthPickerPopover";
 import { Timeline, Summary, Total, Absence, Overtime } from "../lib/definitions";
 
 export default function Calendar({ setMonthYear, summary, total, timelines, overtime, absence }: { setMonthYear: (date: string) => void, summary: Summary; total: Total; timelines: Timeline[], overtime: Overtime, absence: Absence }) {

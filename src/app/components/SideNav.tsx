@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import NavLinks from "../components/nav-links";
-import KaopizLogo from "./kaopizlogo";
+import NavLinks from "./NavLinks";
+import KaopizLogo from "./KaopizLogo";
 import { useAppSelector } from "../lib/hooks";
 
 export default function SideNav() {

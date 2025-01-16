@@ -1,6 +1,6 @@
 'use client'
 
-import Calendar from "@/app/components/calendar";
+import Calendar from "@/app/components/Calendar";
 import { fetchOwnerCalendarData } from "@/app/lib/data";
 import { useState, useEffect } from "react";
 

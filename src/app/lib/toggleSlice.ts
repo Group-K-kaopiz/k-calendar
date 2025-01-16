@@ -1,7 +1,7 @@
 'use client'
 
 import { createSlice } from '@reduxjs/toolkit';
-import { State } from '../../definitions';
+import { State } from './definitions';
 
 const initialState: State = {
     toggleSideNav: false,

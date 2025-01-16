@@ -15,7 +15,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { useAppDispatch, useAppSelector } from "../lib/hooks";
-import { toggleSideNav } from "../lib/features/toggle/toggleSlice";
+import { toggleSideNav } from "../lib/toggleSlice";
 import { usePathname } from "next/navigation";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
